@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
 import { GiCandleFlame } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
               Luxury scented candles crafted with passion and precision.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-amber-300 transition-colors">
+              <a href="https://www.instagram.com/the_velvet_flames?igsh=MWkwODdwdXh4aG9qbw==" target="_blank" className="text-gray-400 hover:text-amber-300 transition-colors">
                 <FaInstagram size={18} />
               </a>
               <a href="#" className="text-gray-400 hover:text-amber-300 transition-colors">
@@ -34,10 +35,10 @@ const Footer = () => {
           <div>
             <h3 className="font-playfair text-amber-200 text-lg mb-4">Explore</h3>
             <ul className="space-y-2 font-montserrat text-gray-400">
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Shop</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Collections</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Contact</a></li>
+              <li><Link to="/shop" className="hover:text-amber-300 transition-colors">Shop</Link></li>
+              {/*<li><Link to="/collections" className="hover:text-amber-300 transition-colors">Collections</Link></li>*/}
+              <li><Link to="/about" className="hover:text-amber-300 transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-300 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -45,10 +46,10 @@ const Footer = () => {
           <div>
             <h3 className="font-playfair text-amber-200 text-lg mb-4">Support</h3>
             <ul className="space-y-2 font-montserrat text-gray-400">
-              <li><a href="#" className="hover:text-amber-300 transition-colors">FAQs</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Shipping</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Returns</a></li>
-              <li><a href="#" className="hover:text-amber-300 transition-colors">Privacy Policy</a></li>
+              <li><Link to="/contact" className="hover:text-amber-300 transition-colors">FAQs</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-300 transition-colors">Shipping</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-300 transition-colors">Returns</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-300 transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 
