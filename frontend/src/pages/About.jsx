@@ -1,30 +1,18 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaCrown } from "react-icons/fa";
 import { GiCandleFlame } from "react-icons/gi";
-import HS from "../assets/dp1.jpg"; // Placeholder for Himanshu's image
+import HS from "../assets/dp1.jpg";
+import MN from "../assets/dp2.jpg";
+import QR from "../assets/qr.jpg";
 
 
 const About = () => {
-  // Co-owners data
   const owners = [
-    {
-      name: "Ajmeera Manvika Naik",
-      role: "Co-Founder & CEO",
-      bio: "Full-stack developer with expertise in e-commerce systems and intellectual property documentation. Passionate about blending technology with artisanal craftsmanship.",
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Manvika", // Replace with actual image
-      links: {
-        linkedin: "linkedin.com/in/manvika-naik--",
-        github: "github.com/manvika05",
-        email: "manu445naik@gmail.com",
-        phone: "+91-8519975367",
-      },
-      skills: ["C++", "JavaScript", "HTML/CSS", "Bootstrap", "MongoDB", "Node.js"],
-    },
     {
       name: "Himanshu Saxena",
       role: "Co-Founder & CTO",
       bio: "MERN stack specialist with a focus on responsive design and performance optimization. Combines technical precision with visionary business strategy.",
-      image: `${HS}`, // Replace with actual image
+      image: `${HS}`,
       links: {
         linkedin: "linkedin.com/in/himanshu--saxena",
         github: "github.com/alan-w-arch",
@@ -33,11 +21,26 @@ const About = () => {
       },
       skills: ["React", "Python", "Tailwind CSS", "Express.js", "MongoDB", "REST APIs"],
     },
+    {
+      name: "Ajmeera Manvika Naik",
+      role: "Co-Founder & CEO",
+      bio: "Full-stack developer with expertise in e-commerce systems and intellectual property documentation. Passionate about blending technology with artisanal craftsmanship.",
+      image: `${MN}`,
+      links: {
+        linkedin: "linkedin.com/in/manvika-naik--",
+        github: "github.com/manvika05",
+        email: "manu445naik@gmail.com",
+        phone: "+91-8519975367",
+      },
+      skills: ["C++", "JavaScript", "HTML/CSS", "Bootstrap", "MongoDB", "Node.js"],
+    },
   ];
+
+
 
   return (
     <div className="bg-black text-gray-100 min-h-screen">
-      {/* ===== HERO SECTION ===== */}
+      {/* HERO SECTION */}
       <section className="relative py-32 px-6 flex items-center justify-center bg-gradient-to-b from-amber-900/10 to-black border-b border-amber-900/20">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-400">
@@ -49,7 +52,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* ===== OWNERS PROFILES ===== */}
+      {/* OWNERS SECTION */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {owners.map((owner, index) => (
@@ -57,7 +60,6 @@ const About = () => {
               key={index}
               className="group relative overflow-hidden border border-amber-900/30 bg-gradient-to-br from-gray-900/50 to-gray-900/20 backdrop-blur-sm p-8 hover:border-amber-600/40 transition-all"
             >
-              {/* Crown badge for equal partnership */}
               <div className="absolute top-6 right-6 flex items-center text-amber-400">
                 <FaCrown className="mr-2" />
                 <span className="font-montserrat text-xs uppercase tracking-wider">50% Partner</span>
@@ -137,43 +139,20 @@ const About = () => {
         </div>
       </section>
 
-      {/* ===== BUSINESS CONTACT ===== */}
+      {/* CONTACT */}
       <section className="py-20 px-6 bg-gradient-to-b from-black to-gray-900/50 border-t border-amber-900/20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <GiCandleFlame className="mx-auto text-amber-400 text-4xl mb-6" />
           <h2 className="font-playfair text-3xl text-amber-200 mb-6">
             Get in Touch with THE VELVET FLAME
           </h2>
           <p className="font-montserrat text-gray-400 mb-10 max-w-2xl mx-auto">
-            For wholesale inquiries, collaborations, or press, reach out to our team.
+            For inquiries, collaborations, or just to say hello, feel free to reach out to us via email or phone. We would love to hear from you!
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8" onDoubleClick={()=> {open("https://www.instagram.com/the_velvet_flames?igsh=MWkwODdwdXh4aG9qbw==")}}>
             <div className="p-6 border border-amber-900/30 bg-gray-900/20 rounded-sm">
-              <h3 className="font-playfair text-xl text-amber-200 mb-3">General Inquiries</h3>
-              <a
-                href="mailto:contact@thevelvetflame.com"
-                className="font-montserrat text-gray-300 hover:text-amber-300 transition-colors"
-              >
-                contact@thevelvetflame.com
-              </a>
-            </div>
-            <div className="p-6 border border-amber-900/30 bg-gray-900/20 rounded-sm">
-              <h3 className="font-playfair text-xl text-amber-200 mb-3">Press & Media</h3>
-              <a
-                href="mailto:press@thevelvetflame.com"
-                className="font-montserrat text-gray-300 hover:text-amber-300 transition-colors"
-              >
-                press@thevelvetflame.com
-              </a>
-            </div>
-            <div className="p-6 border border-amber-900/30 bg-gray-900/20 rounded-sm">
-              <h3 className="font-playfair text-xl text-amber-200 mb-3">Wholesale Orders</h3>
-              <a
-                href="mailto:wholesale@thevelvetflame.com"
-                className="font-montserrat text-gray-300 hover:text-amber-300 transition-colors"
-              >
-                wholesale@thevelvetflame.com
-              </a>
+              <h3 className="font-playfair text-xl text-amber-200 mb-3">Scan Now</h3>
+              <img src={QR} alt="QR code" />
             </div>
           </div>
         </div>
