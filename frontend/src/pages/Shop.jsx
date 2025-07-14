@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { FiFilter, FiShoppingCart, FiX, FiStar, FiChevronDown } from "react-icons/fi";
 import { GiCandleFlame } from "react-icons/gi";
 import { useCart } from "../context/CartContext";
+import MN from "../assets/MidnightNoir.webp";
+import VE from "../assets/VelvetEmber.avif";
+import BO from "../assets/BlackOrchid.webp";
+import RT from "../assets/RoyalTobacco.webp";
+import AN from "../assets/AmberNoir.webp";
+import GT from "../assets/GildedTwilight.avif";
+
 
 const Shop = () => {
   const { addToCart } = useCart();
@@ -13,7 +20,7 @@ const Shop = () => {
       category: "Woody",
       price: 48,
       rating: 4.8,
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Midnight+Noir",
+      image: `${MN}`,
       description: "Smoky oud & vanilla blend for a mysterious ambiance.",
       inStock: true,
     },
@@ -23,7 +30,7 @@ const Shop = () => {
       category: "Amber",
       price: 52,
       rating: 4.9,
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Velvet+Ember",
+      image: `${VE}`,
       description: "Warm amber and sandalwood for a cozy glow.",
       inStock: true,
     },
@@ -33,7 +40,7 @@ const Shop = () => {
       category: "Floral",
       price: 56,
       rating: 4.7,
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Gilded+Twilight",
+      image: `${GT}`,
       description: "Fig and tonka bean for an elegant evening.",
       inStock: false,
     },
@@ -43,7 +50,7 @@ const Shop = () => {
       category: "Woody",
       price: 54,
       rating: 4.6,
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Royal+Tobacco",
+      image: `${RT}`,
       description: "Rich tobacco leaf and cedarwood for depth.",
       inStock: true,
     },
@@ -53,7 +60,7 @@ const Shop = () => {
       category: "Floral",
       price: 58,
       rating: 4.9,
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Black+Orchid",
+      image: `${BO}`,
       description: "Exotic orchid and patchouli for a bold statement.",
       inStock: true,
     },
@@ -63,7 +70,7 @@ const Shop = () => {
       category: "Amber",
       price: 50,
       rating: 4.5,
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Amber+Noir",
+      image: `${AN}`,
       description: "Deep amber and vanilla for a sensual glow.",
       inStock: true,
     },

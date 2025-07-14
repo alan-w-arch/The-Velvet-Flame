@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Cart from "./pages/Cart";
 import './App.css'
 import { CartProvider } from "./context/CartContext";
+import Dashboard from "./pages/Dashboard"; // Assuming you have a Dashboard page
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/admin/products" element={<Dashboard />} />
+          <Route path="/admin/orders" element={<Dashboard />} />
         </Routes>
         <Footer/>
       </Router>

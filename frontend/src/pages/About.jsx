@@ -141,7 +141,7 @@ const About = () => {
 
       {/* CONTACT */}
       <section className="py-20 px-6 bg-gradient-to-b from-black to-gray-900/50 border-t border-amber-900/20">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <GiCandleFlame className="mx-auto text-amber-400 text-4xl mb-6" />
           <h2 className="font-playfair text-3xl text-amber-200 mb-6">
             Get in Touch with THE VELVET FLAME
@@ -152,7 +152,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8" onDoubleClick={()=> {open("https://www.instagram.com/the_velvet_flames?igsh=MWkwODdwdXh4aG9qbw==")}}>
             <div className="p-6 border border-amber-900/30 bg-gray-900/20 rounded-sm">
               <h3 className="font-playfair text-xl text-amber-200 mb-3">Scan Now</h3>
-              <img src={QR} alt="QR code" />
+              <img src={QR} width="300" alt="QR code" />
             </div>
           </div>
         </div>

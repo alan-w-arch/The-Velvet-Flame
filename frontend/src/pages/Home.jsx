@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { GiCandleFlame, GiSparkles } from "react-icons/gi";
 import { FiArrowRight } from "react-icons/fi";
+import MN from "../assets/MidnightNoir.webp";
+import VE from "../assets/VelvetEmber.avif";
+import GT from "../assets/GildedTwilight.avif";
 
 const HomePage = () => {
   // Sample product data
@@ -11,21 +14,21 @@ const HomePage = () => {
       name: "Midnight Noir",
       description: "Smoky oud & vanilla",
       price: "$48",
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Midnight+Noir",
+      image: `${MN}`,
     },
     {
       id: 2,
       name: "Velvet Ember",
       description: "Amber & sandalwood",
       price: "$52",
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Velvet+Ember",
+      image: `${VE}`,
     },
     {
       id: 3,
       name: "Gilded Twilight",
       description: "Fig & tonka bean",
       price: "$56",
-      image: "https://via.placeholder.com/300x400/111827/EDEADE?text=Gilded+Twilight",
+      image: `${GT}`,
     },
   ];
 
@@ -60,7 +63,7 @@ const HomePage = () => {
             to="/shop"
             className="inline-flex items-center px-8 py-3 bg-amber-900/70 hover:bg-amber-800/80 border border-amber-700/50 text-amber-100 font-montserrat uppercase tracking-wider transition-colors"
           >
-            Explore Collections <FiArrowRight className="ml-2" />
+            Explore <FiArrowRight className="ml-2" />
           </Link>
         </div>
       </section>

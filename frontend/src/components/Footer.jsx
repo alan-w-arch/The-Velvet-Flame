@@ -6,9 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-black border-t border-amber-900/20 py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center">
               <GiCandleFlame className="text-amber-400 text-2xl mr-2" />
